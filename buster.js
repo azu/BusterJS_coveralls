@@ -14,6 +14,6 @@ config["My tests"] = {
         outputDirectory: "coverage_reports", //Write to this directory instead of coverage
         format: "lcov", //At the moment cobertura and lcov are the only ones available
         combinedResultsOnly: true, //Write one combined file instead of one for each browser
-        coverageExclusions: ["resources"] //Exclude everything with resources in it's path
+        coverageExclusions: ["lib/object.js", "resources"] //Exclude everything with resources in it's path
     }
 };
