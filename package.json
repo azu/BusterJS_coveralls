@@ -1,0 +1,17 @@
+{
+    "author": "azu",
+    "name": "Browser_coveralls",
+    "description": "Buster.JS with Coveralls example",
+    "version": "0.0.1",
+    "scripts": {
+        "test": "./node_modules/.bin/buster-test -r specification"
+    },
+    "devDependencies": {
+        "buster": "~0.6",
+        "buster-coverage": "*",
+        "coveralls": "*"
+    },
+    "engines": {
+        "node": "~0.8"
+    }
+}
