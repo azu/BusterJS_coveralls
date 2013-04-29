@@ -6,6 +6,7 @@ before_script:
 - sh .travis/scripts/setup_busterjs.sh
 script:
 - npm test
+- cat coverage_reports/coverage.lcov | ./node_modules/coveralls/bin/coveralls.js
 language: node_js
 node_js:
 - 0.8
