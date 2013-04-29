@@ -93,8 +93,9 @@ buster.testCase("Observable Notify Observers Test", {
         assert.callOrder(spy1, spy2);
     },
     "test should not fail if no observers": function (){
+        var that = this;
         refute.exception(function (){
-            this.observable.notify();
-        }.bind(this));
+            that.observable.notify();
+        });
     }
 });
